@@ -1,0 +1,75 @@
+body{
+    color: #ccc;
+    background-color: rgb(36, 47, 65);
+}
+div{
+    border-radius: 15px;
+}
+#title{
+    background-color: rgb(29, 37, 51);
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2.5%;
+    padding-top: 2.5%;
+    padding-bottom: 2%;
+}
+#searchbox{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2.5%;
+}
+input{
+    border-radius: 15px;
+    border-style: none;
+    caret-color: #ccc;
+    color: #ccc;
+    outline: none;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 99%;
+    height: 100%;
+    background-color: rgb(34, 43, 59);
+}
+.upperboxes{
+    display: grid;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 250px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+.box{
+    background-color: rgb(34, 43, 59);
+    float: left;
+    /* margin: 0 100px; */
+    /* margin-left: 10%;
+    margin-right: 10%; */
+}
+.boxtitle{
+    background-color: rgb(29, 37, 51);
+    text-align: center;
+    width: 350px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+.linkitems{
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a:link{
+    text-decoration: none;
+    color:#ccc;
+}
+a:visited{
+    text-decoration: none;
+    color: #ccc;
+}
+a:hover {
+    text-decoration: underline;
+}
