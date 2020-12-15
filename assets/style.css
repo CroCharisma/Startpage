@@ -1,5 +1,5 @@
 body{
-    color: #ccc;
+    color:  rgb(47, 64, 94);
     background-color: rgb(36, 47, 65);
 }
 div{
@@ -10,30 +10,38 @@ div{
     margin-top: 5%;
     margin-left: 20%;
     margin-right: 20%;
+    overflow: visible;
     margin-bottom: 2.5%;
     padding-top: 2.5%;
     padding-bottom: 2%;
 }
-#searchbox{
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 2.5%;
-}
 input{
+    overflow: visible;
     border-radius: 15px;
     border-style: none;
     caret-color: #ccc;
     color: #ccc;
     outline: none;
-    padding-left: 1%;
+    padding-left: 15px;
     padding-top: 1%;
     padding-bottom: 1%;
-    width: 99%;
+    width: 97%;
     height: 100%;
     background-color: rgb(34, 43, 59);
+    margin-bottom: 2.5%;
+}
+#searchbox{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.cont{
+    width: 0px; /* change to 1 for debugging */
+    margin: auto;
+    overflow: visible;
+    /* background: red; */
 }
 .upperboxes{
-    display: grid;
+    display: flex;
     margin-left: 20%;
     margin-right: 20%;
     height: 250px;
@@ -44,9 +52,7 @@ input{
 .box{
     background-color: rgb(34, 43, 59);
     float: left;
-    /* margin: 0 100px; */
-    /* margin-left: 10%;
-    margin-right: 10%; */
+    
 }
 .boxtitle{
     background-color: rgb(29, 37, 51);
@@ -55,6 +61,13 @@ input{
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 25px;
+}
+#box-1{
+    margin-left: -400px;
+    margin-right: 50px; /* 350 + this * -1 should equal margin-left */
+}
+#box-2{
+    margin-left: 50px;
 }
 .linkitems{
     text-align: center;
