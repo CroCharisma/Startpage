@@ -102,3 +102,24 @@ a:visited{
 a:hover {
     text-decoration: underline;
 }
+.bottom-left-busta-pepelaugh{
+    position: absolute;
+	bottom: 0;
+}
+.bottom-left-busta-pepelaugh a{
+    color: #555;
+	font-size: 9px;
+	display: none;
+}
+.bottom-left-busta-pepelaugh li:hover a{
+    color: #ccc;
+}
+.bottom-left-busta-pepelaugh ul{
+    list-style: none;
+	height: 60px;
+	width: 60px;
+	padding-top: 30px;
+}
+.bottom-left-busta-pepelaugh ul:hover li a{
+    display: block!important;
+}
