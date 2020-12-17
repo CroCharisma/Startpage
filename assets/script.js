@@ -22,16 +22,30 @@ function updateTime(k) {
 }
 
 function redirect( args ){
+  var search = "";
   if( args.length > 1 ){
-    
+    console.log("lmao");
+    switch( args[0] ){
+      case "y":
+        url = "https://www.youtube.com/results?search_query=";
+        break;
+      case "g":
+        url = "https://www.google.com/search?q="
+        break;
+      case "tw":
+        url = "https://twitter.com/search?q=";
+        break;
+      case "ttv":
+        url = "https://www.twitch.tv/";
+        break;
+    }
+    search += url + args[1];
   }
   else{
-    let search = "";
     search += url + args[0];
-    window.location.href = (search);
-    console.log(url + args[0]);
   }
 
+  window.location.href = (search);
   return false;
 }
 
