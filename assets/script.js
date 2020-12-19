@@ -24,8 +24,7 @@ function updateTime(k) {
 function redirect( args ){
   var search = "";
   if( args.length > 1 ){
-    console.log("lmao");
-    switch( args[0] ){
+    switch( args[0].toLowerCase() ){
       case "y":
         url = "https://www.youtube.com/results?search_query=";
         break;
@@ -37,6 +36,9 @@ function redirect( args ){
         break;
       case "ttv":
         url = "https://www.twitch.tv/";
+        break;
+      case "dgg":
+        url = "https://www.destiny.gg/bigscreen#twitch/";
         break;
     }
     search += url + args[1];
