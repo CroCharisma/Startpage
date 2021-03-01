@@ -40,7 +40,7 @@ input{
 .cont1{
     width: 0px; /* change to 1 for debugging */
     margin: auto;
-    overflow: visible;
+    height: 450px;
     /* background: red; */
 }
 .cont2{
@@ -48,16 +48,31 @@ input{
     margin-left: -450px;
 }
 .upperboxes{
-    display: flex;
-    margin-left: 20%;
-    margin-right: 20%;
-    height: 250px;
+    /* margin-left: 20%;
+    margin-right: 20%; */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    justify-items: center;
+    height: 100px;
+    transition: height 1s;
+}
+.upperboxes:hover{
+    animation: expand 0.5s;
+    display:flex;
+    height: 250px;
+    transition: height 1s;
+}
+.upperboxes .linkitems{
+    display: none;
+}
+.upperboxes:hover .linkitems{
+    display: inline;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 .lowerboxes{
-    display: flex;
+    display: none;
     margin-top: 30px;
     margin-left: -175px;
     height: 250px;
@@ -72,14 +87,12 @@ input{
 }
 .boxtitle{
     background-color: rgb(29, 37, 51);
+    color: #ccc;
     text-align: center;
     width: 350px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 25px;
-}
-.boxtitle:hover{
-    //LOOL
 }
 #box-1{
     margin-left: -400px;
@@ -87,12 +100,6 @@ input{
 }
 #box-2{
     margin-left: 50px;
-}
-.linkitems{
-    text-align: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 a:link{
     text-decoration: none;
