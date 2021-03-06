@@ -48,18 +48,13 @@ input{
     margin-left: -450px;
 }
 .upperboxes{
-    /* margin-left: 20%;
-    margin-right: 20%; */
+    display: flex;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
     height: 100px;
-    transition: height 1s;
+    transition: height 750ms;
 }
 .upperboxes:hover{
-    animation: expand 0.5s;
-    display:flex;
     height: 250px;
-    transition: height 1s;
 }
 .upperboxes .linkitems{
     display: none;
@@ -72,13 +67,8 @@ input{
     margin: 0;
 }
 .lowerboxes{
+    transition-delay: 1s;
     display: none;
-    margin-top: 30px;
-    margin-left: -175px;
-    height: 250px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
 }
 .box{
     background-color: rgb(34, 43, 59);
