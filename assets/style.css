@@ -47,19 +47,18 @@ input{
     width: 900px;
     margin-left: -450px;
 }
-.upperboxes{
+.upperboxes, .lowerboxes{
     display: flex;
     grid-template-columns: 1fr 1fr;
-    height: 100px;
-    transition: height 750ms;
 }
-.upperboxes:hover{
+.upperboxes:hover, .lowerboxes:hover{
     height: 250px;
 }
-.upperboxes .linkitems{
+.upperboxes .linkitems, .lowerboxes .linkitems{
     display: none;
+    transition-delay: 1s;
 }
-.upperboxes:hover .linkitems{
+.upperboxes:hover .linkitems, .lowerboxes:hover .linkitems{
     display: inline;
     text-align: center;
     list-style-type: none;
@@ -67,13 +66,30 @@ input{
     margin: 0;
 }
 .lowerboxes{
-    transition-delay: 1s;
-    display: none;
+    display: flex;
+    margin-top: 40px;
+    margin-left: -175px;
+    grid-template-columns: 1fr 1fr;
+}
+.lowerboxes:hover .linkitems{
+    display: inline;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#box1, #box2, #box3{
+    /* box animation code here */
+    height: 100px;
+    transition: height 750ms;
+}
+
+#box1:hover, #box2:hover, #box3:hover{
+    height: 250px;
 }
 .box{
     background-color: rgb(34, 43, 59);
     float: left;
-    
 }
 .boxtitle{
     background-color: rgb(29, 37, 51);
