@@ -40,60 +40,38 @@ input{
 .cont1{
     width: 0px; /* change to 1 for debugging */
     margin: auto;
-    height: 450px;
+    overflow: visible;
     /* background: red; */
 }
 .cont2{
     width: 900px;
     margin-left: -450px;
 }
-.upperboxes, .lowerboxes{
+.upperboxes{
     display: flex;
-    grid-template-columns: 1fr 1fr;
-}
-.upperboxes:hover, .lowerboxes:hover{
+    margin-left: 20%;
+    margin-right: 20%;
     height: 250px;
-}
-.upperboxes .linkitems, .lowerboxes .linkitems{
-    display: none;
-    transition-delay: 1s;
-}
-.upperboxes:hover .linkitems, .lowerboxes:hover .linkitems{
-    display: inline;
-    text-align: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
 }
 .lowerboxes{
     display: flex;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: -175px;
-    grid-template-columns: 1fr 1fr;
-}
-.lowerboxes:hover .linkitems{
-    display: inline;
-    text-align: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-#box1, #box2, #box3{
-    /* box animation code here */
-    height: 100px;
-    transition: height 750ms;
-}
-
-#box1:hover, #box2:hover, #box3:hover{
     height: 250px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
 }
 .box{
     background-color: rgb(34, 43, 59);
     float: left;
+    
 }
 .boxtitle{
     background-color: rgb(29, 37, 51);
-    color: #ccc;
     text-align: center;
     width: 350px;
     padding-top: 5px;
@@ -106,6 +84,12 @@ input{
 }
 #box-2{
     margin-left: 50px;
+}
+.linkitems{
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 a:link{
     text-decoration: none;
