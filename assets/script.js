@@ -21,7 +21,7 @@ function updateTime(k) {
   }
 }
 
-function redirect( args ){
+function redirect( args ){//need to rewrite this to account for special characters (like & and shit)
   var search = "";
   if( args.length > 1 ){
     switch( args[0].toLowerCase() ){
