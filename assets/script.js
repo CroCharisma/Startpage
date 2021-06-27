@@ -40,6 +40,9 @@ function redirect( args ){//need to rewrite this to account for special characte
       case "dgg":
         url = "https://www.destiny.gg/bigscreen#twitch/";
         break;
+      case "MAL":
+        url = "https://myanimelist.net/search/all?q=";
+        break;
     }
     search += url + args[1];
   }
