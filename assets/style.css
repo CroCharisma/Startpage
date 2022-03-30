@@ -2,14 +2,15 @@ html{
     font-family: "Helvetica Neue", Roboto, sans-serif;
 }
 body{
-    color:  rgb(47, 64, 94);
+    /* color:  rgb(47, 64, 94); */
+    color: #ccc;
     background-color: rgb(36, 47, 65);
 }
 div{
     border-radius: 15px;
 }
 #title{
-    background-color: rgb(29, 37, 51);
+    background-color: rgba(29, 37, 51, 1);
     width: 1000px;
     margin-top: 50px;
     margin-left: -500px;
@@ -18,31 +19,28 @@ div{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-input{
-    overflow: visible;
-    border-radius: 15px;
-    border-style: none;
-    caret-color: #ccc;
-    color: #ccc;
-    outline: none;
-    text-align: center;
+#searchbox{
     padding-left: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 97%;
-    height: 100%;
-    background-color: rgb(34, 43, 59);
+    background: rgba(34, 43, 59, 1);
     margin-bottom: 2.5%;
 }
-/* #searchbox{
-    margin-left: 25%;
-    margin-right: 25%;
-} */
+#search{
+    background: transparent;
+    border: none;
+    outline: none;
+    overflow: visible;
+    caret-color: #ccc;
+    color: #ccc;
+    width: 97%;
+    height: 100%;
+    padding-left: 5px;
+}
 .cont1{
-    width: 0px; /* change to 1 for debugging */
+    width: 0px;
     margin: auto;
     overflow: visible;
-    /* background: red; */
 }
 .cont2{
     width: 900px;
@@ -57,22 +55,14 @@ input{
     grid-template-rows: auto;
     justify-items: center;
 }
-.lowerboxes{
-    display: flex;
-    margin-top: 30px;
-    margin-left: -175px;
-    height: 250px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
-}
 .box{
-    background-color: rgb(34, 43, 59);
+    background-color: rgba(34, 43, 59, 1);
     float: left;
     
 }
 .boxtitle{
-    background-color: rgb(29, 37, 51);
+    background-color: rgba(29, 37, 51, 1);
+    opacity: 1;
     text-align: center;
     color: #ccc;
     width: 350px;
@@ -92,6 +82,7 @@ input{
     list-style-type: none;
     padding: 0;
     margin: 0;
+    opacity: 1;
 }
 a:link{
     text-decoration: none;
