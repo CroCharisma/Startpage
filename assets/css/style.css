@@ -1,0 +1,24 @@
+:root{
+    --backg: #242f41;
+    --cjn0: #1d2533;
+    --cjn1: #222b3b;
+}
+html{
+    font-family: "Helvetica Neue", Roboto, sans-serif;
+}
+body{
+    /* color:  rgb(47, 64, 94); */
+    color: #ccc;
+    background-color: var(--backg);
+}
+.clock{
+    text-align: center;
+}
+.clock h1{
+    background-color: var(--cjn0);
+    max-width: 60%;
+    padding: 1em 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5em;
+}
